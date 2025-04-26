@@ -1,0 +1,16 @@
+{
+    "welcome": "Bienvenido a Candidly 👋",
+    "subtitle": "Tu espacio seguro para comunicarte mejor.",
+    "simulator": {
+        "title": "Esta es la pantalla del simulador"
+    },
+    "links": {
+        "title": "Esta es la pantalla de vinculacion"
+    },
+    "mediator": {
+        "title": "Esta es la pantalla del mediador"
+    },
+    "reports": {
+        "title": "Esta es la pantalla de informes"
+    }
+}

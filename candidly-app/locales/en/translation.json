@@ -1,0 +1,16 @@
+{
+    "welcome": "Welcome to Candidly 👋",
+    "subtitle": "Your safe space for better conversations.",
+    "simulator": {
+        "title": "This is the simulator screen"
+    },
+    "link": {
+        "title": "This is the links screen"
+    },
+    "mediator": {
+        "title": "This is the mediator screen"
+    },
+    "reports": {
+        "title": "This is the reports screen"
+    }
+}
