@@ -1,4 +1,4 @@
-name: Run Tests
+name: Code Quality
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,8 +18,13 @@ jobs:
         with:
           node-version: 20
 
+      - name: Change directory to candidly-app
+        run: cd candidly-app
+
       - name: Install dependencies
+        working-directory: candidly-app
         run: npm install
 
-      - name: Run tests
-        run: npm run test
+      - name: Run ESLint
+        working-directory: candidly-app
+        run: npm run lint
