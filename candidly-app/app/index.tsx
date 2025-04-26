@@ -13,18 +13,18 @@ export default function HomeScreen() {
 
       <View style={styles.linkContainer}>
         <Link href="/(tabs)/simulator" style={styles.link}>
-          Ir al Simulador →
+          Para Ir al Simulador →
         </Link>
         <Link href="/(tabs)/link" style={styles.link}>
-          Vincular Pareja →
+          Para Vincular Pareja →
         </Link>
 
         <Link href="/(tabs)/mediator" style={styles.link}>
-          Mediador Virtual →
+          Para Mediador Virtual →
         </Link>
 
         <Link href="/(tabs)/reports" style={styles.link}>
-          Ver Reportes →
+          Para Ver Reportes →
         </Link>
 
       </View>
