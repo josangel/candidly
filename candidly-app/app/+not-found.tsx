@@ -1,32 +1,27 @@
-import { Link, Stack } from 'expo-router';
-import { StyleSheet } from 'react-native';
+// app/(tabs)/+not-found.tsx
 
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { Link } from 'expo-router';
+import { Container, Button, Header } from '@/components';
+import { Text, StyleSheet } from 'react-native';
 
 export default function NotFoundScreen() {
   return (
-    <>
-      <Stack.Screen options={{ title: 'Oops!' }} />
-      <ThemedView style={styles.container}>
-        <ThemedText type="title">This screen doesn't exist.</ThemedText>
-        <Link href="/" style={styles.link}>
-          <ThemedText type="link">Go to home screen!</ThemedText>
-        </Link>
-      </ThemedView>
-    </>
+    <Container>
+      <Header title="Pantalla no encontrada" />
+      <Text style={styles.text}>
+        Parece que te perdiste. No encontramos la pantalla que buscas.
+      </Text>
+      <Link href="/(tabs)/simulator" asChild>
+        <Button title="Volver al Inicio" onPress={() => {}} />
+      </Link>
+    </Container>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 20,
-  },
-  link: {
-    marginTop: 15,
-    paddingVertical: 15,
+  text: {
+    fontSize: 16,
+    marginVertical: 16,
+    textAlign: 'center',
   },
 });
